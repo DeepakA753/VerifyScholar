@@ -1,0 +1,13 @@
+.div {
+    max-height: 79vh;
+    overflow-y: auto;
+}
+sup{
+    font-weight: bolder;
+    font-size: 13px;
+    color: red;
+}
+#title1{
+    font-size: 22px;
+    font-weight: 500;
+}

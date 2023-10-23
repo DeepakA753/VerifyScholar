@@ -1,0 +1,5 @@
+.display-area{
+    position: absolute;
+    left: 248px;
+    width: calc(100% - 240px);
+}

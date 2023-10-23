@@ -1,0 +1,41 @@
+<ng-container *ngIf="hardcodedAuthenticationService.isStudentUserLoggedIn()">
+    <div class="container">
+        <div class="container1" id="div1">
+            <div class="inner2">
+                <pre>
+      <label>.</label>Your application is under process.
+      <label>.</label>Your application meets the eligibility
+        of the scholarship.
+      <label>.</label>Institute-level verification process
+        is on-going.
+            </pre>
+            </div>
+        </div>
+        <div class="container1" id="div2">
+            <img src="/assets/HomeLogo.png">
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="hardcodedAuthenticationService.isInstitutionLoggedIn()">
+    <!-- <div class="container">
+        <div class="container1" id="div1">
+            <div class="inner2">
+                <pre>
+      <label>.</label>Your application is under process.
+      <label>.</label>Your application meets the eligibility
+        of the scholarship.
+      <label>.</label>Institute-level verification process
+        is on-going.
+            </pre>
+            </div>
+        </div>
+        <div class="container1" id="div2">
+            <img src="/assets/HomeLogo.png">
+        </div>
+    </div> -->
+    <div class="col-sm-12">
+        <div class="alert alert-primary" role="alert">
+            <sup>*</sup>No Notifications
+        </div>
+    </div>
+</ng-container>

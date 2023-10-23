@@ -1,0 +1,17 @@
+svg{
+    margin-right: 10px;
+}
+.mail{
+    color: blue;
+}
+.mail:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(0, 0, 166);
+}
+.container{
+    font-size: 20px;
+}
+.caption{
+    font-weight: bolder;
+}

@@ -1,0 +1,21 @@
+img{
+    width: 15%;
+}
+span{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.container{
+    position: absolute;
+    left: 30%;
+}
+.div1, .div2{
+    margin-top: 6%;
+}
+a{
+    text-decoration: none;
+    transition: color 300ms;
+}
+a:hover{
+    color: #0d00ff;
+}

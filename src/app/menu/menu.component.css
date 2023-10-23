@@ -1,0 +1,22 @@
+.div{
+    display: flex;
+    background-color: #d3b5fa;
+}
+img{
+    width: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    border-radius: 50%;
+}
+li{
+    margin-left: 5px;
+}

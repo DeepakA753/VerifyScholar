@@ -1,0 +1,39 @@
+.container2{
+    background-color: #4f69c2;
+    width: 100%;
+    height: 50vh;
+}
+label, pre{
+    font-weight: bold;
+}
+.row1{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+.row2{
+    font-size: large;
+}
+.row2 td{
+    padding: 40px;
+}
+.img{
+    width: 15%;
+    border-radius: 50%;
+}
+.div{
+    background-color: #2d76ab;
+    display: flex;
+}
+.img1{
+    width: 75%;
+}
+.pre{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+.img2{
+    width: 90%;
+    height: 60%;
+}

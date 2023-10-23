@@ -1,0 +1,45 @@
+<div class="div">
+    <img src="/assets/logo1.png" alt="verify-scholar-logo">
+    <div class="container">
+        <h1>VERIFY SCHOLAR</h1>
+    </div>
+</div>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+            <li><a class="nav-link active" routerLink="/home">Home</a></li>
+            <li><a class="nav-link active" routerLink="/features">Features</a></li>
+            <li><a class="nav-link active" routerLink="/contact">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a *ngIf="!(hardcodedAuthenticationService.isInstitutionLoggedIn()||!hardcodedAuthenticationService.isStudentUserLoggedIn())"
+                class="nav-link active" routerLink="/apply">Apply For Scholarship</a></li>
+            <li><a *ngIf="!(hardcodedAuthenticationService.isInstitutionLoggedIn()||hardcodedAuthenticationService.isStudentUserLoggedIn())"
+                    class="nav-link active" routerLink="/login">Login</a></li>
+            <div *ngIf="hardcodedAuthenticationService.isStudentUserLoggedIn()" class="dropdown">
+                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="true">
+                    D
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="">Deepak</a></li>
+                    <li><a class="dropdown-item" routerLink="/notification">Notifications</a></li>
+                    <li><a *ngIf="hardcodedAuthenticationService.isStudentUserLoggedIn()" routerLink="/logout"
+                            class="dropdown-item">Logout</a></li>
+                </ul>
+            </div>
+            <div *ngIf="hardcodedAuthenticationService.isInstitutionLoggedIn()" class="dropdown">
+                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="true">
+                    P
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="">PSNACET</a></li>
+                    <li><a class="dropdown-item" routerLink="/notification">Notifications</a></li>
+                    <li><a *ngIf="hardcodedAuthenticationService.isInstitutionLoggedIn()" routerLink="/logout"
+                            class="dropdown-item">Logout</a></li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+</div>
