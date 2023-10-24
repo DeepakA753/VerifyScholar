@@ -8,8 +8,8 @@ import { HardcodedAuthenticationService } from '../hardcoded-authentication.serv
   styleUrls: ['./institution-login.component.css']
 })
 export class InstitutionLoginComponent {
-  username=''
-  password=''
+  username='9213'
+  password='PSNA'
   invalidLogin=false
   constructor(private router : Router,
     private hardcodedAuthenticationService : HardcodedAuthenticationService){}
