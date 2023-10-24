@@ -17,6 +17,7 @@ import { ApplyComponent } from './apply/apply.component';
 import { CentralComponent } from './central/central.component';
 import { AndhrapradeshComponent } from './andhrapradesh/andhrapradesh.component';
 import { NotificationComponent } from './notification/notification.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NotificationComponent } from './notification/notification.component';
     CentralComponent,
     AndhrapradeshComponent,
     NotificationComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

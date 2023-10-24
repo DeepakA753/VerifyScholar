@@ -13,6 +13,7 @@ import { RouteGaurdService } from './route-gaurd.service';
 import { CentralComponent } from './central/central.component';
 import { AndhrapradeshComponent } from './andhrapradesh/andhrapradesh.component';
 import { NotificationComponent } from './notification/notification.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'institutionLogin', component: InstitutionLoginComponent},
   { path: 'central', component:CentralComponent},
   { path: 'andhrapradhesh', component:AndhrapradeshComponent},
+  { path: 'register', component: RegisterComponent ,canActivate:[RouteGaurdService]},
   { path: 'notification', component:NotificationComponent ,canActivate:[RouteGaurdService]},
   { path: 'apply', component:ApplyComponent ,canActivate:[RouteGaurdService]},
   { path: 'logout', component: LogoutComponent}
